@@ -972,7 +972,7 @@ mongodb:
   persistence:
     ## @param mongodb.persistence.enabled Enable MongoDB&reg; persistence using PVC
     ##
-    enabled: true
+    enabled: false
     ## @param mongodb.persistence.storageClass PVC Storage Class for MongoDB&reg; volume
     ## If defined, storageClassName: <storageClass>
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
