@@ -847,7 +847,7 @@ ingress:
 persistence:
   ## @param persistence.enabled Enable Parse persistence using PVC
   ##
-  enabled: true
+  enabled: false
   ## @param persistence.storageClass PVC Storage Class for Parse volume
   ## If defined, storageClassName: <storageClass>
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
