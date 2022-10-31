@@ -123,13 +123,13 @@ spec:
             - name: PARSE_ENABLE_CLOUD_CODE
               value: {{ ternary "yes" "no" .Values.server.enableCloudCode | quote }}
             - name: PARSE_DATABASE_HOST
-              value: '192.168.0.94'
+              value: "192.168.0.94"
             - name: PARSE_DATABASE_PORT_NUMBER
               value: "8635"
             - name: PARSE_DATABASE_USER
-              value: 'rwuser'
+              value: "rwuser"
             - name: PARSE_DATABASE_PASSWORD
-              value: 'P!ssw0rdP!ssw0rd'
+              value: "P!ssw0rdP!ssw0rd"
             {{- if .Values.server.extraEnvVars }}
               {{- include "common.tplvalues.render" ( dict "value" .Values.server.extraEnvVars "context" $ ) | nindent 12 }}
             {{- end }}
