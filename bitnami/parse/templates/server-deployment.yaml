@@ -129,7 +129,7 @@ spec:
             - name: PARSE_DATABASE_USER
               value: 'rwuser'
             - name: PARSE_DATABASE_PASSWORD
-              value: 'P@ssw0rdP@ssw0rd'
+              value: 'P#ssw0rdP#ssw0rd'
             {{- if .Values.server.extraEnvVars }}
               {{- include "common.tplvalues.render" ( dict "value" .Values.server.extraEnvVars "context" $ ) | nindent 12 }}
             {{- end }}
